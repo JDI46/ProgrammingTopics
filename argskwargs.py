@@ -14,13 +14,21 @@
 # x = sum_items(**kwargs)
 # print(x)
 
-def sum_items(p1, p2, a=None, b=None, c=None):
-    print(p1, p2, a, b, c)
-    return a + b + c +p1 + p2
+# def sum_items(p1, p2, a=None, b=None, c=None):
+#     print(p1, p2, a, b, c)
+#     return a + b + c +p1 + p2
 
-# args = [1, 2]
-# kwargs = {'a': 5, 'b': 6, 'c': 5}
-# x = sum_items(*args, **kwargs)
-# print(x)
-value = [1, 2, 3, 4, 5, 5, 3, 2, 1, 5]
-print(*value)
+# # args = [1, 2]
+# # kwargs = {'a': 5, 'b': 6, 'c': 5}
+# # x = sum_items(*args, **kwargs)
+# # print(x)
+# value = [1, 2, 3, 4, 5, 5, 3, 2, 1, 5]
+# print(*value)
+
+def test(p1, *args, **kwargs):
+    print(p1, args, kwargs)
+
+
+values = [1, 2, 3, 4, 5, 5]
+kwargs = {'a': 4, 'c': 5}
+test(5, *values, **kwargs)

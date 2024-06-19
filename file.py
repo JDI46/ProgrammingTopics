@@ -33,3 +33,6 @@ with open('file2.txt', 'r+') as file:
     # lines = file.readlines()[:3]
     for line in file:
         print(line)
+#I can enumerate the file and end=""
+#if i == a certain number of lines, then break and return desired outcome
+#I can print(file.read(5)) to get new characters

@@ -1,4 +1,4 @@
-from functions import *
+import code
 
 
 def func():
@@ -6,3 +6,5 @@ def func():
 
 if __name__ == '__main__':
     print('This is the main module')
+
+
